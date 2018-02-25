@@ -7,7 +7,7 @@ import time
 from random import randint
 import csv
 
-class AmazonReviewScraper:
+class amazon_review_scraper:
 
 	# Ignore SSL certificate errors
 	ssl._create_default_https_context = ssl._create_unverified_context
