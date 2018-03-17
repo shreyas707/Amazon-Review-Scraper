@@ -7,7 +7,8 @@ In your command prompt/terminal: ```pip install amazon-review-scraper```
 
 
 ## Usage
-1. Instantiating the object: ```scraper = amazon_review_scraper.amazon_review_scraper(url, start_page, end_page, time)```
+1. Instantiating the object: 
+```scraper = amazon_review_scraper.amazon_review_scraper(url, start_page, end_page, time)```
 
    * ```url```: In the product's page, scroll down to the end of the reviews and click **see all reviews**. Click on that and copy the ```url```. This ```url``` is your first parameter. 
    	Example: ```https://www.amazon.com/Apple-iPhone-Factory-Unlocked-Phone/product-reviews/B00NQGP42Y/ref=cm_cr_dp_d_show_all_btm?ie=UTF8&reviewerType=all_reviews&pageNumber=1```
@@ -20,10 +21,12 @@ In your command prompt/terminal: ```pip install amazon-review-scraper```
    * ```time(in seconds)```: This is the 4th argument. Amazon might block your IP if it receives too many requests every second. To prevent that, you can mention ```time``` (in seconds). The scraper will wait anywhere from ```0``` to the ```time``` before scraping every page. If you don't want to wait before scraping every page, give the value as **0**.
 
 
-2. Call the ```scraper()``` method: ```scraper.scrape()```
+2. Call the ```scraper()``` method: 
+```scraper.scrape()```
 
 
-3. Write to CSV using ```write_csv()``` method: ```scraper.write_csv(file_name)```
+3. Write to CSV using ```write_csv()``` method: 
+```scraper.write_csv(file_name)```
 
    * ```file_name```: Enter the file name of the CSV that you want the program to generate.
 
